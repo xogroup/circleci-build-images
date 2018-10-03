@@ -1,4 +1,4 @@
-# CircleI Docker Images
+# CircleCI Docker Images
 
 ## Why
 
