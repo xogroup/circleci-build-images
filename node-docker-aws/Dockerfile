@@ -1,4 +1,4 @@
-FROM circleci/node:8.12
+FROM circleci/node:8.15
 
 USER root
 
