@@ -9,10 +9,9 @@ However, we frequently found them lacking some tools making them appropriate for
 Common tools used in development and CI are installed e.g. `git`, `ssh`, `tar`, `ca-certificates`, `curl`, `wget`.
 Docker tools: latest `docker`, `docker-compose`, and `dockerize` are installed
 
-
 ## Packages Included
 
-- node 8.12
+- node 8.17
 - docker
 - docker-compose
 - git
@@ -27,11 +26,9 @@ Docker tools: latest `docker`, `docker-compose`, and `dockerize` are installed
 In the `.circleci/config.yml` file at the root of your project, you should add:
 
 ```yaml
-...
-  docker:
-    - image: xogroup/docker-git-make-eb:1.0.1
-...
-
+---
+docker:
+  - image: xogroup/circleci-build-images:node8.17
 ```
 
 The first image listed in the file defines the primary container image where all steps will run.
